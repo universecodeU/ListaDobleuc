@@ -23,7 +23,6 @@ class ListaD
 	
     public void insFrente(int dato) {
         NodoD nuevo=new NodoD(dato);
-
         if(listaVacia()) {
                 cabeza1=nuevo;
                 cabeza2=nuevo;	
@@ -64,13 +63,12 @@ class ListaD
                                     cabeza2=nuevo;
                             }
                     }
-		}
-		
+		}	
 	}
 	
     public void recorreI() {
         NodoD aux=cabeza2;
-        String miLista="Lista de números";
+        String miLista="Lista de números \n";
 
         while(aux!=null)
         {
@@ -82,7 +80,7 @@ class ListaD
 	
     public void recorre() {
         NodoD aux=cabeza1;
-        String lista="Lista de números";
+        String lista="Lista de números \n";
         while (aux!=null)
         {
                 lista+=aux.getInfo()+"\n";
